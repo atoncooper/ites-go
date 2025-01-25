@@ -1,0 +1,10 @@
+consul:
+  address: "127.0.0.1:8500"
+  scheme: "http"
+  datacenter: "dc1"
+  token: ""
+grpc:
+  serviceName: "IdentityVerification-Server"
+  address: "127.0.0.1"
+  port: 9090
+  healthCheckPort: 9090               # 健康检查端口

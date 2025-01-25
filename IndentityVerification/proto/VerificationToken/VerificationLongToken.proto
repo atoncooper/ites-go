@@ -1,0 +1,13 @@
+syntax = "proto3";
+package VerificationLongToken;
+option go_package = ".";
+service VerificationLongToken {
+  rpc VerificationLongToken(VerificationLongTokenRequest) returns (VerificationLongTokenResponse) {}
+}
+message VerificationLongTokenRequest {
+  string username = 1;
+  string token = 2;
+}
+message VerificationLongTokenResponse {
+  bool isValid = 1;
+}

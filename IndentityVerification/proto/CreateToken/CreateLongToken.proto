@@ -1,0 +1,13 @@
+syntax = "proto3";
+package CreateLongToken;
+option go_package = ".";
+service CreateLongToken {
+  rpc createLongToken(CreateLongTokenRequest) returns (CreateLongTokenResponse) {}
+}
+message CreateLongTokenRequest {
+  string username = 1;
+  string key = 2;
+}
+message CreateLongTokenResponse {
+  string longToken = 1;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+package VerificationShortToken;
+option go_package = ".";
+service VerificationShortToken {
+  rpc VerificationShortToken(VerificationShortTokenRequest) returns (VerificationShortTokenResponse) {}
+}
+message VerificationShortTokenRequest {
+  string username = 1;
+  string shortToken = 2;
+}
+message VerificationShortTokenResponse {
+  bool isValid = 1;
+}
